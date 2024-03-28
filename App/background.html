@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Background</title>
+  </head>
+  <body>
+    <div id="card-1" class="card">
+      <h2>Personal life</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum
+        erat ut congue dapibus.
+      </p>
+      <button onclick="showCardDetails(1)">Learn More</button>
+    </div>
+
+    <div id="card-2" class="card">
+        <h2>Environmental life</h2>
+     <p>
+        Suspendisse cursus gravida convallis. Integer ac nunc vel enim
+        condimentum fermentum.
+      </p>
+      <button onclick="showCardDetails(2)">Learn More</button>
+    </div>
+
+    <div id="card-details-1" class="card-details">
+      <p>
+        Curabitur ac nisi vitae ligula laoreet vulputate. Integer sit amet
+        ipsum turpis.
+      </p>
+    </div>
+
+    <div id="card-details-2" class="card-details">
+      <p>
+        Integer consectetur, nulla et aliquam condimentum, nibh nibh auctor
+        metus, auctor tempor nisi leo in massa.
+      </p>
+    </div>
+
+    <script>
+      function showCardDetails(id) {
+        var cardDetails = document.querySelectorAll(".card-details");
+
+        for (var i = 0; i < cardDetails.length; i++) {
+          if (i === id - 1) {
+            cardDetails[i].style.display = "block";
+          } else {
+            cardDetails[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+
+    <style>
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .card-details {
+        display: none;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 5px 10px;
+        border: none;
+        background-color: blue;
+        color: white;
+      }
+
+      button:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </body>
+</html>

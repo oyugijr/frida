@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="mylogo">MOURICE&nbsp;<span>OYUGI</span></a>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="aboutme.html">ABOUT ME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </header> 
+    <main>
+        <h1>About Me</h1>
+       <p><b>Here is an information about me and my background.</b></p>
+       <h3><u>My vision</u></h3>
+       <p>As oyugi mourice i envision a world where every individual has a powerful online presence that reflects their unique identity.I strive to empower individuals to express themselves through innovative web design.My mission is to provide customized solutions that exceed my clients expectations and enhance their digital footprint.My vision extends to promoting digital inclusion and designing user friendly experiences.through my commitment and expertise to excellence,i create a more connected and inclusive future,one website at a time.</p>
+       <h3><u>My story</u></h3>
+       <p>Oyugi mourice is a web designer commited to delivering exceptional online experiences.My passion for design and technology drives me to create innovative solutions that reflects my clients unique identities.With my expertise in custom web design,responsive layout,personal branding,user experience design, and search engine optimization, we provide tailored solutions that meet my clients' objectives.I work colaboratively to ensure that every project exceeds expectations.Join my journey to redefine online experiences.</p>
+    </main>
+    <h1>My Background</h1>
+    <div class="container">
+       
+        <div class="card">
+          <h2>Educational background</h2>
+          <p>
+            This is the first card that describes my background. Here's some
+            information about it.
+          </p>
+          <a href="education.html"><button id="educationBtn" class="btn">Discover More</button></a>
+        </div>
+        <div class="card">
+          <h2>Social life</h2>
+          <p>
+            This is the second card that also describes my background. Here's some
+            more information about it.
+          </p>
+          <a href="background.html"><button id="backgroundBtn" class="btn">Learn More</button></a>
+        </div>
+      </div>
+      
+        <script>
+          const educationBtn = document.querySelector('#dogsBtn');
+  const backgroundBtn = document.querySelector('#wombatsBtn');
+  
+  educationBtn.addEventListener('click', () => {
+    window.location.href = 'education.html';
+  });
+  
+  backgroundBtn.addEventListener('click', () => {
+    window.location.href = 'background.html';
+  });
+        </script>
+  <footer>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mourice-oyugi-533b852b4"class="social-icon"target="_blank">
+            <i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/+254700314150"class="social-icon"target="_blank">
+            <i class="fab fa-whatsapp"></i></a>
+        <a href="https://twitter.com/yourprofile."class="social-icon"target="_blank">
+            <i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/yourprofile"class="social-icon"target="_blank">
+            <i class="fab fa-github"></i></a>
+     </div>
+    &copy; 2024 Oyugi mourice.
+    <p>all rights reserved.</p>
+  </footer>
+</body>
+</html>

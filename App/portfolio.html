@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="" class="mylogo">MOURICE&nbsp;<span>OYUGI</span></a>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="aboutme.html">ABOUT ME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </header>
+
+     <!--introduction section-->
+     <section id="introduction">
+      <h1>welcome to my portfolio</h1>
+      <p>I am Mourice odhiambo,a software engineer specializing in web development.Explore my work below!</p>
+  </section>
+
+  <!--portfolio section-->
+
+  <section id="portfolio">
+      <div class="container">
+          <h2>portfolio projects</h2>
+          <div class="poject-card">
+              <h3>project title</h3>
+              <p>description of the project</p>
+              <a href="#"target="_blank">View project</a>
+          </div>
+      </div>
+  </section>
+  <!--testiimonial section-->
+  <section id="testimonials">
+      <h2>Client testimonials</h2>
+      <div class="testimonials">
+          <blockquote>"Working with Oyugi mourice was a graet experience.There technical expertise and problem-solving skills were exceptional."</blockquote>
+          <cite>- Hawona Rodgers, Maji.co.ke</cite>
+      </div>
+      <div class="testimonials">
+          <blockquote>"Oyugi mourice delivered high-quality code within tight deadlines, exceeding our expectations.Highly recommended!."</blockquote>
+          <cite>- Emmerson Godwin, IBM Kenya</cite>
+      </div>
+  </section>
+  
+  <!--Skills section-->
+  <section id="skills">
+      <div class="container">
+         <h2>Skills and Expertise</h2>
+         <ul class="skills-list">
+               <li>Programming languages:javascript,python</li>
+               <li>Web development:HTML5,  CSS, React</li>
+               <li>Database management:SQL, MongoDB(STILL NOT FARMILIAR)</li>
+               <li>Verson control:Git, Github</li>
+               <li>Problem solving and Algorithms</li>
+          </ul>
+       </div>   
+  </section>
+
+  <!--contact section-->
+  <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for inquiries, collaborations, or just saying hello!</p>
+      <a href="mailto:oyugimaurice22@gmail.com">Email me</a>
+  </section>
+
+<script>
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+  (function () {
+    function refreshCSS() {
+      var sheets = [].slice.call(document.getElementsByTagName("link"));
+      var head = document.getElementsByTagName("head")[0];
+      for (var i = 0; i < sheets.length; ++i) {
+        var elem = sheets[i];
+        var parent = elem.parentElement || head;
+        parent.removeChild(elem);
+        var rel = elem.rel;
+        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+        }
+        parent.appendChild(elem);
+      }
+    }
+    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+    var address = protocol + window.location.host + window.location.pathname + '/ws';
+    var socket = new WebSocket(address);
+    socket.onmessage = function (msg) {
+      if (msg.data == 'reload') window.location.reload();
+      else if (msg.data == 'refreshcss') refreshCSS();
+    };
+    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+      console.log('Live reload enabled.');
+      sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+    }
+  })();
+}
+else {
+  console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
+ <!--footer section-->
+ <footer>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/mourice-oyugi-533b852b4"class="social-icon"target="_blank">
+        <i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/+254700314150"class="social-icon"target="_blank">
+        <i class="fab fa-whatsapp"></i></a>
+    <a href="https://twitter.com/yourprofile."class="social-icon"target="_blank">
+        <i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/yourprofile"class="social-icon"target="_blank">
+        <i class="fab fa-github"></i></a>
+ </div>
+  &copy; 2024 Oyugi mourice.
+  <p>all rights reserved.</p>
+ </footer>
+</body>
+</html>

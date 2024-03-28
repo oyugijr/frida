@@ -1,0 +1,124 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my about</title>
+    
+<link rel="stylesheet" href="http://127.0.0.1:5501/contact.css?_cacheOverride=1711608141793"></head>
+<body>
+    <header class="header">
+        <a href="" class="mylogo">MOURICE&nbsp;<span>OYUGI</span></a>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="aboutme.html">ABOUT ME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </header>
+ <div class="container">
+    <main>
+        <div>
+        <h1>Get in Touch:</h1>
+        <p>Thank you for taking your time to visit my website.If you have any questions or comments,please do not hesitate to contact me.you can reach through the form or any other way stated below.I appreciate your interest in my work.i look forward hearing from you.</p><br>
+        <table>
+            <tbody>
+                <tr style="height: 61px;">
+                    <td style="width: 267px;,height: 7px;,text-align: center;,">
+                        <h2><span style="color: #f1c40f;">Inquiries</span></h2>
+                    </td>
+                    <td style="width: 267px;,height: 7px;,text-align: center;,">
+                        <h2><span style="color: #f1c40f;">Friend Request</span></h2>
+
+                    </td>
+                    
+                </tr>
+                <tr style="height: 20px;">
+                    <td style="width: 100%px;,height: 20px;,text-align: center;,">
+                        <p><span style="color: #ffffff;">Mobile: +254 700314150</span></p>
+                        <p><span style="color: #ffffff;">Oyugi mourice</span></p>
+                        <p><span style="color: #ffffff;,width: 400;">Email: <a href="mailto:oyugimaurice22@gmail.com">oyugimaurice22@gmail.com</a></span></p>
+                    </td><td style="width: 100%px;,height: 20px;,text-align: center;,">
+                        <p><span style="color: #ffffff;">Mobile: +254 700314150</span></p>
+                        <p><span style="color: #ffffff;"></span></p>
+                        <p><span style="color: #ffffff; width: 400;">Email: <a href="mailto:emmersongodwin761@gmail.com">emmersongodwin761@gmail.com</a></span></p>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>   
+        </div>
+     <br>
+    <section>
+        <p font-size="50px"><b>You can as well drop a message</b></p>
+
+        <form action="index.php">
+          <label for="Name">Name:</label><br>
+          <input type="text" id="name" name="name" required=""><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required=""><br>
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject" required=""><br><br>
+          <textarea name="message" id="message" cols="30" rows="10" reaquired="">Message</textarea><br>
+          <input type="submit" value="submit">
+        </form>
+    </section>
+    
+    </main>
+ </div>
+
+ <div class="contact-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.24802929033!2d37.3158842650473!3d-0.56546483317811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182629b5a37f6381%3A0x859cebe37dc37639!2sKirinyaga%20UniversityKirinyaga%20University!5e0!3m2!1ssw!2ske!4v1711606841812!5m2!1ssw!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+<footer>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mourice-oyugi-533b852b4" class="social-icon" target="_blank">
+            <i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/+254700314150" class="social-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i></a>
+        <a href="https://twitter.com/yourprofile." class="social-icon" target="_blank">
+            <i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/yourprofile" class="social-icon" target="_blank">
+            <i class="fab fa-github"></i></a>
+     </div>
+    © 2024 Oyugi mourice.
+    <p>all rights reserved.</p>
+</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
