@@ -1,6 +1,54 @@
 body {
 	background-image: url('path/to/image.png');
-	background-color: #f0f0f0;
-	margin: 0;
+	background-color: bisque;
+	color: black;
+	margin: 20px;
 	padding: 0;
 }
+header {
+	text-align: justification;
+	margin-bottom: 20px;
+}
+
+h1 {
+	color: #0066cc;
+}
+
+section {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+/* Footer styles*/
+footer{
+	background-color: beige;
+	padding: 20px 0;
+	text-align: center;
+  }
+  .social-icons{
+	margin-bottom: 10px;
+  }
+  .social-icon{
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 24px;
+	transition: color 0.3s ease;
+	color: #007bff;
+  }
+  i{
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 24px;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+  }
+  i .fab fa {
+	margin-right: 5px;
+  }

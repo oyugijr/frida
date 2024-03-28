@@ -42,6 +42,7 @@ main{
     padding: 20px;
     top: 0;
     left: 1px;
+    justify-content: space-between;
 }
 
 @media screen (max-width: 768px;){
@@ -108,10 +109,11 @@ table a{
 }
 
 form {
-    margin: 2;
+    margin: 0;
     padding: 0;
     display: flex;
-    margin: 0 auto;flex-direction: column;
+    margin: 0 auto;
+    flex-direction: column;
     width: 100%;
     max-width: 500px;
 }
@@ -131,7 +133,7 @@ form textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    align-items: center;
+    align-items: left;
 }
 form textarea {
     height: 150px;
@@ -149,12 +151,13 @@ form input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.contact-map {
+main .contact-map {
     width:0 50% 0;
     height: 450px;
-    margin-top: 50px;
+   /* margin-top: 50px;
     margin-bottom: 40px;
-    margin-left: 50%;
+    margin-left: 50%;*/
+    justify-content: right;
 }
 @media (max-width: 768px;) {
     .contact-map {
@@ -175,13 +178,8 @@ footer{
     margin-right: 10px;
     font-size: 24px;
     transition: color 0.3s ease;
+    color: #007bff;
    }
-
-  footer a {
-    color: #2c05bb;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
 
   i {
     display: inline-block;
